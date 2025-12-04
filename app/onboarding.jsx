@@ -16,19 +16,19 @@ const slides = [
     key: "slide1",
     title: "Welcome to TabFood",
     text: "The new connection between you and your hobbies. Discover places that match your vibe and your taste.",
-    image: require("../../assets/images/onboarding1.png"),
+    image: require("../assets/images/onboarding1.jpg"),
   },
   {
     key: "slide2",
     title: "Be Your Friends' Food Blogger",
     text: "TabFood is a social media for restaurants, cafés, and foods. Share your food experiences and reviews with your circle.",
-    image: require("../../assets/images/onboarding2.png"),
+    image: require("../assets/images/onboarding2.jpg"),
   },
   {
     key: "slide3",
     title: "We’re Waiting For You",
     text: "Join us now and start your food journey. Save spots, post moments, and never eat boring again.",
-    image: require("../../assets/images/onboarding3.png"),
+    image: require("../assets/images/onboarding3.jpg"),
   },
 ];
 
