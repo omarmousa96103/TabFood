@@ -1,0 +1,69 @@
+.signup-container {
+  min-height: 100vh;
+  background: #141528;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.signup-container h1 {
+  margin-bottom: 20px;
+}
+
+.signup-toggle {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.signup-toggle button {
+  background: transparent;
+  border: 2px solid #b11226;
+  color: #b11226;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.signup-toggle .active {
+  background: #b11226;
+  color: white;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.signup-form input {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+.primary-btn {
+  margin-top: 10px;
+  background: #b11226;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 16px;
+  color: #b3b3b3;
+}
+
+.login-link {
+  color: #b11226;
+  text-decoration: none;
+  font-weight: 600;
+}

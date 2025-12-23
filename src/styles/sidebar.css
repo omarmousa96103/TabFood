@@ -1,0 +1,47 @@
+.sidebar {
+  width: 75px;
+  height: 100vh;              /* 100% height */
+  background-color: #601C1C;  /* same as header */
+  display: flex;
+  justify-content: center;    /* center icons vertically as a group */
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    /* vertically centered */
+  gap: 42px;                  /* gap between icons */
+  height: 100%;
+}
+
+/* clickable icon container */
+.sidebar-item {
+  width: 52px;                /* slightly bigger than icon for hover background */
+  height: 52px;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #7a2a2a;  /* lighter shade hover */
+  transform: scale(1.04);
+}
+
+/* icon size */
+.sidebar-icon {
+  width: 38px;
+  height: 28px;
+  object-fit: contain;
+
+  /* makes the icon appear white if it's a dark png */
+  filter: brightness(0) invert(1);
+}

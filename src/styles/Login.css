@@ -1,0 +1,100 @@
+.login-container {
+  min-height: 100vh;
+  background: #141528;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: white;
+  
+}
+
+/* Title */
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.onboarding-logo {
+  width: 110px;
+  margin-bottom: 20px;
+}
+
+/* Form container */
+.login-fields,
+.login-container form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs — SAME AS SIGNUP */
+.login-container input {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Login button — SAME AS SIGNUP */
+.login-button {
+  margin-top: 10px;
+  background: #b11226;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+/* Signup text */
+.login-container p {
+  margin-top: 16px;
+  color: #b3b3b3;
+}
+
+/* Link */
+.login-container a {
+  color: #b11226;
+  text-decoration: none;
+  font-weight: 600;
+}
+ /* Form wrapper */
+.login-fields,
+.login-container form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs — FORCE SAME WIDTH */
+.login-container input {
+  width: 44%;          /* ✅ THIS IS THE KEY */
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Login button — SAME WIDTH */
+.login-button {
+  width: 100%;          /* ✅ SAME WIDTH AS INPUTS */
+  max-width: 400px;
+  margin-top: 10px;
+  background: #b11226;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}

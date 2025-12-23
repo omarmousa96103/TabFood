@@ -1,0 +1,136 @@
+/* ===== ROOT COLORS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+:root {
+  --bg-dark: #141528;
+  --bg-card: #141528;
+  --red-accent: #b11226;
+  --red-hover: #d4142a;
+  --text-white: #ffffff;
+  --text-muted: #b3b3b3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Istok Web', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== PAGE CONTAINER ===== */
+.onboarding-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #141528 0%, #141528 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  color: var(--text-white);
+  position: relative;
+}
+
+/* ===== SKIP BUTTON ===== */
+.skip-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.skip-button:hover {
+  color: var(--text-white);
+}
+
+/* ===== CONTENT ===== */
+.onboarding-title {
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.onboarding-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 40px 0;
+  object-fit: contain;
+}
+
+.onboarding-description {
+  max-width: 420px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+/* ===== DOT INDICATORS ===== */
+.dots {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--red-accent);
+  transform: scale(1.2);
+}
+
+/* ===== BUTTONS ===== */
+.onboarding-buttons {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.primary-btn {
+  background: var(--red-accent);
+  color: var(--text-white);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.primary-btn:hover {
+  background: var(--red-hover);
+}
+
+.primary-btn:active {
+  transform: scale(0.98);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--red-accent);
+  border: 2px solid var(--red-accent);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: var(--red-accent);
+  color: var(--text-white);
+}
